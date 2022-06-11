@@ -3,11 +3,9 @@ package dev.JackaBoi.ReachBlock.Data;
 import dev.JackaBoi.ReachBlock.Utils.MathUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 
 import java.util.*;
-import java.util.concurrent.LinkedBlockingQueue;
 
 public class PlayerData {
 
@@ -35,7 +33,6 @@ public class PlayerData {
     }
 
     public Long ping, lastServerKP;
-    public boolean flagged = false;
 
     private final Map<Long, Location> preLocations = new LinkedHashMap<>();
 

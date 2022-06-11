@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 
 public final class ReachBlock extends JavaPlugin {
 
-    public final String ver = "a08";
+    public final String ver = "a09";
     public String newver;
     public boolean upToDate = true;
     public Debug debug;
