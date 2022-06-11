@@ -25,10 +25,28 @@ public class BoundingBox {
     public BoundingBox(Entity entity){
         origin=entity.getLocation().toVector().clone();
         if(entity.getType().equals(EntityType.PLAYER)){
-            min=origin.clone().subtract(new Vector(0.4,0,0.4)); max=origin.clone().add(new Vector(0.4,1.9,0.4));
+            min=origin.clone().subtract(new Vector(0.6,0,0.6)); max=origin.clone().add(new Vector(0.6,1.9,0.6));
         }
         if(entity.getType().equals(EntityType.ZOMBIE) || entity.getType().equals(EntityType.VILLAGER) || entity.getType().equals(EntityType.WITCH)){
             min=origin.clone().subtract(new Vector(0.5,0,0.5)); max=origin.clone().add(new Vector(0.5,2.05,0.5));
+        }
+        if(entity.getType().equals(EntityType.SKELETON)){
+            min=origin.clone().subtract(new Vector(0.5,0,0.5)); max=origin.clone().add(new Vector(0.5,2.09,0.5));
+        }
+        if(entity.getType().equals(EntityType.CREEPER)){
+            min=origin.clone().subtract(new Vector(0.5,0,0.5)); max=origin.clone().add(new Vector(0.5,1.8,0.5));
+        }
+        if(entity.getType().equals(EntityType.SPIDER)){
+            min=origin.clone().subtract(new Vector(1.3,0,1.3)); max=origin.clone().add(new Vector(1.3,1.0,1.3));
+        }
+        if(entity.getType().equals(EntityType.PIG)){
+            min=origin.clone().subtract(new Vector(0.8,0,0.8)); max=origin.clone().add(new Vector(0.8,1.0,0.8));
+        }
+        if(entity.getType().equals(EntityType.COW) || entity.getType().equals(EntityType.MUSHROOM_COW)){
+            min=origin.clone().subtract(new Vector(0.8,0,0.8)); max=origin.clone().add(new Vector(0.8,1.5,0.8));
+        }
+        if(entity.getType().equals(EntityType.SHEEP)){
+            min=origin.clone().subtract(new Vector(0.8,0,0.8)); max=origin.clone().add(new Vector(0.8,1.4,0.8));
         }
     }
 
