@@ -9,9 +9,9 @@ Current Config:
 -UpdateChecker:true
 ```
 Raytrace Util Class:
-  Credits To : CJP10 and 567legodude | Spigot
-  Spigot Thread: https://www.spigotmc.org/threads/hitboxes-and-ray-tracing.174358/
+  Credits To : CJP10 and 567legodude | Spigot  
+  Spigot Thread: https://www.spigotmc.org/threads/hitboxes-and-ray-tracing.174358/  
 
 PlayerData Class:
-  Credits To : funkemunky | Youtube & GitHub
-  Github: https://github.com/funkemunky/ACTutorial/tree/old-tutorials/
+  Credits To : funkemunky | Youtube & GitHub  
+  Github: https://github.com/funkemunky/ACTutorial/tree/old-tutorials/  
