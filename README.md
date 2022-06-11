@@ -1,7 +1,7 @@
 # ReachBlock
 ReachBlock Plugin
 
-Current Version: a08
+Current Version: a09
 
 Current Config:
 ```
