@@ -1,0 +1,19 @@
+name: ReachBlock
+version: '${project.version}'
+main: dev.JackaBoi.ReachBlock.ReachBlock
+depend: [ ProtocolLib ]
+authors: [ JackaBoi ]
+description: ReachBlock Plugin
+website: www.JackaBoi.dev
+
+commands:
+  rb:
+    description: ReachBlock Command
+    usage: /rb, /rb reachdistance <reachdistance>, /rb debug
+    aliases: reachblock
+    permission: reachblock.rb
+    permission-message: You do not have the required permission!
+
+permissions:
+  reachblock.rb:
+    description: access to all commands of this plugin
