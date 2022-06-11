@@ -4,8 +4,8 @@ ReachBlock Plugin
 Current Version: a08
 
 Current Config:
-ReachDistance:3.00
-UpdateChecker:true
+-ReachDistance:3.00
+-UpdateChecker:true
 
 Raytrace Util Class:
 -Credits To : CJP10 and 567legodude | Spigot
