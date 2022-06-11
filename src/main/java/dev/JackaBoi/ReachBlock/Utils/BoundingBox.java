@@ -1,5 +1,6 @@
 package dev.JackaBoi.ReachBlock.Utils;
 
+import com.comphenix.protocol.utility.MinecraftVersion;
 import dev.JackaBoi.ReachBlock.Data.Debug;
 import dev.JackaBoi.ReachBlock.Data.PlayerData;
 import org.bukkit.Bukkit;
@@ -8,6 +9,7 @@ import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
 
 import java.util.ArrayList;
@@ -25,7 +27,9 @@ public class BoundingBox {
     public BoundingBox(Entity entity){
         origin=entity.getLocation().toVector().clone();
         if(entity.getType().equals(EntityType.PLAYER)){
-            min=origin.clone().subtract(new Vector(0.6,0,0.6)); max=origin.clone().add(new Vector(0.6,1.9,0.6));
+            min=origin.clone().subtract(new Vector(0.6,0,0.6)); max=origin.clone().add(new Vector(0.6,1.8,0.6));
+            if(((Player)entity).isSneaking() && MinecraftVersion.getCurrentVersion().atOrAbove(MinecraftVersion.COMBAT_UPDATE))
+            {min=origin.clone().subtract(new Vector(0.6,0,0.6)); max=origin.clone().add(new Vector(0.6,1.5,0.6));}
         }
         if(entity.getType().equals(EntityType.ZOMBIE) || entity.getType().equals(EntityType.VILLAGER) || entity.getType().equals(EntityType.WITCH)){
             min=origin.clone().subtract(new Vector(0.5,0,0.5)); max=origin.clone().add(new Vector(0.5,2.05,0.5));
